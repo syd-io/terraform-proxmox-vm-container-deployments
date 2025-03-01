@@ -1,0 +1,31 @@
+# Ignore Terraform variable files (may contain sensitive data)
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Ignore Terraform state files (contains infrastructure state & secrets)
+*.tfstate
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Ignore Terraform plan output files
+*.tfplan
+
+# Ignore Terraform cache & lock files
+.terraform/
+.terraform.lock.hcl
+
+# Ignore provider and dependency logs
+crash.log
+*.log
+
+# Ignore Proxmox API token files (if any)
+*.pve.json
+
+# Ignore custom shell scripts (if not needed in repo)
+get_next_vmid.sh
+
+# Ignore Terraform execution files
+ubuntu-cloud-server
+
